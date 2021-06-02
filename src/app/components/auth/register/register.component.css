@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    text-align: center;
+}
+
+.logo-name{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

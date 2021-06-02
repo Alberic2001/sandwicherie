@@ -1,9 +1,11 @@
-<body>
-    <app-alert></app-alert>
+<body class="mt-5">
 <div class="card" style="width: 18rem;">
-    <img src="../../../../assets/logo/burger-au-fromage.png" alt="Logo" class="my-3">
-    <div class="logo-name">Le Crock Sand'Wich</div>
+    <div class="logo-name">
+        <img src="../../../../assets/logo/burger.png" alt="Logo" class="my-3">
+        <p>Le Crock Sand'Wich</p>
+    </div>
     <div class="card-body">
+        <app-alert></app-alert>
       <h5 class="card-title">Connexion</h5>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
@@ -35,7 +37,7 @@
         <div class="log-up">          
             Pas de Compte?
             <br>
-            <button type="button" class="btn btn-outline-dark">Creer un Compte</button>
+            <button type="button" class="btn btn-outline-dark" routerLink="/register">Creer un Compte</button>
         </div>
     </form>
     </div>

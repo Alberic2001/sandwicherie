@@ -60,10 +60,11 @@ export class LoginComponent implements OnInit {
               data => {
                   user.token = data
                   localStorage.setItem('token', user.token);
+                  this.alertService.success('Logged in !');
                   this.router.navigate([this.returnUrl]);
               },
               error => {
-                  this.alertService.error(error);
+                  this.alertService.error('Something went wrong');
                   this.loading = false;
               });
   }
