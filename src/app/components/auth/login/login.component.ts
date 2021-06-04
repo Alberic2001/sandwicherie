@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit {
                   this.router.navigate([this.returnUrl]);
               },
               error => {
-                  this.alertService.error('Something went wrong');
+                  this.alertService.error('Votre email ou mot de passe n\'est pas valide');
                   this.loading = false;
               });
   }
